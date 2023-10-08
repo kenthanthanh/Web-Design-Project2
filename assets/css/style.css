@@ -78,6 +78,11 @@ a {
 .header {
     background: #fffcf4;
 }
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
 .header .body {
     display: flex;
     align-items: center;
@@ -119,11 +124,6 @@ a {
     min-width: 144px;
 }
 
-.header .fixed {
-    position: sticky;
-    top: -28px;
-    z-index: 1;
-}
 /* Hero */
 .hero {
     padding: 56px 0 65px 0;
