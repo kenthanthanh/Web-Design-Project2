@@ -438,39 +438,62 @@ a {
 
 /* Features */
 .features .body {
-    padding: 200px 0;
+    margin-top: 200px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.features .body .view-img {
+.features .view-img {
     display: flex;
     /* flex:1; */
-    width: 49%;
-    gap: 30px;
+    /* width: 49%; */
+    gap: 0 30px;
 }
-.features .body .view-img .img {
+.features .view-img .img {
     width: 270px;
     height: 404px;
     border-radius: 16px;
     object-fit: cover;
 }
-.features .body .view-img .img:first-child{
+.features .view-img .img:first-child {
     margin-top: 34px;
 }
-.features .body .content{
-    margin-left: 130px;
-    /* margin-left: auto; */
+.features .content {
+    width: 41%;
+    /* Đảo ngược flex -> flex dọc  */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin-left: 130px; */
 }
-.features .body .content .desc{
+.features .content .desc {
     margin-top: 16px;
-    color: #5F5B53;
-font-size: 1.6rem;
-font-weight: 400;
-line-height: 1.75; /* 175% */
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
 }
-.features .body .content .cta-sing-up{
+.features .body .content .cta-feature {
     margin-top: 32px;
-    minw: 137px;
-    background:var(--primary-color);
+    min-width: 137px;
+    background: var(--primary-color);
+}
+/* Features 2 */
+.features-2nd .body {
+    flex-direction: row-reverse;
+    margin-bottom: 200px;
 }
 
+.features-2nd .body .content {
+    width: 49%;
+    /* margin-left: 0; */
+}
+
+.features-2nd .body .view-img .img {
+    /* Đã sử dụng flex-direction ở trên features để thay thế */
+    /* margin: 0 0 0 130px; */
+    margin-top: 0;
+    width: 470px;
+    height: 440px;
+    border-radius: 20px;
+}
