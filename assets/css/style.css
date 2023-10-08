@@ -350,6 +350,18 @@ a {
     font-weight: 600;
     line-height: 1.67; /* 166.667% */
 }
+.popular-item .vote{
+    display: flex;
+    align-items: center; 
+}
+.popular-item .vote .point{
+    margin-left: 6px;
+    color:var(--primary-color);
+font-family: Poppins;
+font-size: 1.6rem;
+font-style: normal;
+line-height: 1.75; /* 175% */
+}
 
 .popular-bottom .detail .desc {
     padding-top: 6px;
@@ -575,8 +587,6 @@ a {
 }
 .blog-item .title .blog-title a {
     color: #171100;
-    font-family: Poppins;
-    line-height: 1.75; /* 175% */
     font-weight: 600;
 }
 .blog-item .title .cta-blog {
