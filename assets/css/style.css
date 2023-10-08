@@ -54,7 +54,12 @@ a {
     font-weight: 700;
     line-height: 1.26; /* 126.316% */
 }
-
+.heading.lv3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    font-family: Poppins;
+}
 /* Auto ẩn thông tin nếu quá số dòng cho phép line-clamp */
 .line-clamp {
     display: -webkit-box;
@@ -500,7 +505,7 @@ a {
 /* Blog */
 .blog {
     padding: 96px 0;
-    background: #FFFCF4;
+    background: #fffcf4;
 }
 
 .blog .head-blog {
@@ -528,7 +533,7 @@ a {
     flex-shrink: 0;
     width: calc(33.33% - 20px);
 }
-.blog .blog-item:hover{
+.blog .blog-item:hover {
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 .blog-item .img {
@@ -554,7 +559,6 @@ a {
     line-height: 1.85; /* 185.714% */
 }
 .blog-item .date::after {
-    
     display: inline-block;
     position: absolute;
     content: "";
@@ -566,37 +570,100 @@ a {
     background: #e2dfda;
     border-top: -50px;
 }
-.blog-item .title .blog-title{
-margin: 12px 0;
+.blog-item .title .blog-title {
+    margin: 12px 0;
 }
-.blog-item .title .blog-title a{
+.blog-item .title .blog-title a {
     color: #171100;
     font-family: Poppins;
     line-height: 1.75; /* 175% */
     font-weight: 600;
 }
-.blog-item .title .cta-blog{
+.blog-item .title .cta-blog {
     font-size: 1.4rem;
 }
-.blog-item .title .cta-blog:hover{
+.blog-item .title .cta-blog:hover {
     background: var(--primary-color);
 }
-.blog .dots{
+.blog .dots {
     margin-top: 38px;
     display: flex;
     gap: 6px;
     justify-content: center;
 }
-.blog .dots .dot{
+.blog .dots .dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background: #5f5b53;
     cursor: pointer;
-
 }
-.blog .dots .dot.active{
-    cursor:default;
-    background:var(--primary-color);
+.blog .dots .dot.active {
+    cursor: default;
+    background: var(--primary-color);
 }
 /* Footer */
+.footer {
+    background: #2e2100;
+}
+.footer .row {
+    padding: 96px 0 38px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+    width: 21.6%;
+}
+.footer .row .column:first-child {
+    width: 35%;
+}
+.footer .column .desc {
+    margin: 18px 0;
+    max-width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+.footer .column .socials {
+    gap: 18px;
+    display: flex;
+    align-items: center;
+}
+.footer .column .head-list {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    border-bottom: 1px solid #59554b;
+    color: #fff;
+}
+.footer .column .list {
+    margin-top: 28px;
+}
+.footer .column .list a {
+    margin-bottom: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+.footer .list li:last-child a{
+    margin-bottom: 0;
+}
+.footer .column .list strong {
+    color: #fff;
+    font-weight: 600;
+}
+.footer .copyright {
+    padding:28px 0;
+
+}
+
+.footer .copyright p{
+    text-align: center;
+    color: #807D74;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 1.85; /* 185.714% */
+
+}
